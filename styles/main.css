@@ -1,0 +1,72 @@
+:root {
+  /*main colors*/
+  --c-dark: #181820;
+  --c-silver: #767676;
+  --c-light: #e6e8e6;
+  --c-lgreen: #54a94c;
+  --c-dgreen: #296302;
+}
+
+
+
+/*---SECTIONS---*/
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  font-family: 'open', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: var(--c-neutral)*/ /*use if you have background image*/
+}
+
+
+
+/*TEXT*/
+
+h1 {
+  font-family: 'waiting', cursive;
+  font-size: 3.2rem;
+  color: var(--c-light);
+}
+
+h2 {
+  font-family: 'open', sans-serif;
+  font-size: 2.5rem;
+  color: var(--c-light);
+  font-weight: bold;
+}
+
+
+
+p {
+  font-family: 'open', sans-serif;
+  font-size: 0.8rem;
+  color: var(--c-light);
+}
+
+
+
+
+
+/*formatting elements*/
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.bin {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

@@ -1,0 +1,56 @@
+/*trying out some button*/
+
+.button {
+  background-color: var(--c-dark); /* black */
+  border: none;
+  color: var(--c-light);
+  padding: 1rem 1.5rem;
+
+  font-family: 'open', sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 1.2rem;
+
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-main {
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  border: 1px solid var(--c-light);
+  border-radius: 0.3rem;
+  margin: 6rem;
+  width: 12rem;
+
+  font-size: 1.5rem;
+  font-family: 'waiting', cursive;
+}
+
+.button-main:hover {
+  background-color: var(--c-silver);
+  color: var(--c-dark);
+}
+
+.button-secondary {
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  border: 1px solid var(--c-light);
+  border-radius: 0.3rem;
+  margin: 0;
+  width: 5rem;
+  padding: 0.7rem 1rem;
+
+  font-size: 1rem;
+  font-family: 'waiting', cursive;
+}
+
+  .button-secondary:hover {
+    background-color: var(--c-silver);
+    color: var(--c-dark);
+
+}

@@ -1,0 +1,53 @@
+/*---FONT DEFINTIONS---*/
+
+/*Waiting for the sunrise - headers, quiz, etc*/
+
+@font-face {
+  font-family: "waiting";
+  src: url("fonts/Waiting_for_the_Sunrise/WaitingfortheSunrise-Regular.ttf");
+}
+
+@font-face {
+  font-family: "waiting";
+  src: url("fonts/Waiting_for_the_Sunrise/WaitingfortheSunrise-Regular.ttf");
+  font-style: normal;
+}
+
+
+/*open sans - about etc*/
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-ExtraBold.ttf");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "open";
+  src: url("fonts/Open_Sans/OpenSans-Light.ttf");
+  font-weight: lighter;
+}
