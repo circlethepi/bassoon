@@ -19,6 +19,11 @@ body {
   color: var(--c-light);
   font-family: 'open', sans-serif;
   font-size: 1rem;
+
+  padding: 0;
+  margin 0;
+
+
 }
 
 .container {
@@ -60,10 +65,12 @@ p {
 /*formatting elements*/
 
 .centering {
+  width: 100vw;
+  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%
 }
 
 .bin {
