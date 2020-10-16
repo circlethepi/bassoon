@@ -104,35 +104,77 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: '',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'dawn', correct: true },
+      { text: 'dusk', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: '',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'past', correct: true },
+      { text: 'present', correct: true },
+      { text: 'future', correct: true }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: '',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'why', correct: false },
+      { text: 'how', correct: true }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: '',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'hard', correct: false },
+      { text: 'soft', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'wind', correct: false },
+      { text: 'sea', correct: true }
+      { text: 'land', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'rain', correct: false },
+      { text: 'sun', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'heart', correct: false },
+      { text: 'body', correct: true }
+      { text: 'mind', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'black', correct: false },
+      { text: 'white', correct: true }
+      { text: 'grey', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'moon', correct: false },
+      { text: 'stars', correct: true }
+    ]
+  }
+  {
+    question: '',
+    answers: [
+      { text: 'trust', correct: false },
+      { text: 'know', correct: true }
     ]
   }
 ]
