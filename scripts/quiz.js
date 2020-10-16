@@ -104,14 +104,14 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: '',
+    question: '1',
     answers: [
       { text: 'dawn', correct: true },
       { text: 'dusk', correct: false }
     ]
   },
   {
-    question: '',
+    question: '2',
     answers: [
       { text: 'past', correct: true },
       { text: 'present', correct: true },
@@ -119,21 +119,21 @@ const questions = [
     ]
   },
   {
-    question: '',
+    question: '3',
     answers: [
       { text: 'why', correct: false },
       { text: 'how', correct: true }
     ]
   },
   {
-    question: '',
+    question: '4',
     answers: [
       { text: 'hard', correct: false },
       { text: 'soft', correct: true }
     ]
   }
   {
-    question: '',
+    question: '5',
     answers: [
       { text: 'wind', correct: false },
       { text: 'sea', correct: true }
@@ -141,14 +141,14 @@ const questions = [
     ]
   }
   {
-    question: '',
+    question: '6',
     answers: [
       { text: 'rain', correct: false },
       { text: 'sun', correct: true }
     ]
   }
   {
-    question: '',
+    question: '7',
     answers: [
       { text: 'heart', correct: false },
       { text: 'body', correct: true }
@@ -156,7 +156,7 @@ const questions = [
     ]
   }
   {
-    question: '',
+    question: '8',
     answers: [
       { text: 'black', correct: false },
       { text: 'white', correct: true }
@@ -164,14 +164,14 @@ const questions = [
     ]
   }
   {
-    question: '',
+    question: '9',
     answers: [
       { text: 'moon', correct: false },
       { text: 'stars', correct: true }
     ]
   }
   {
-    question: '',
+    question: '10',
     answers: [
       { text: 'trust', correct: false },
       { text: 'know', correct: true }
