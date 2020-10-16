@@ -104,77 +104,70 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: '1',
+    question: '',
     answers: [
       { text: 'dawn', correct: true },
       { text: 'dusk', correct: false }
     ]
   },
+
   {
-    question: '2',
+    question: '',
+    answers: [
+      { text: 'wind', correct: true },
+      { text: 'rain', correct: true },
+      { text: 'sea', correct: true }
+    ]
+  },
+
+  {
+    question: '',
+    answers: [
+      { text: 'rain', correct: false },
+      { text: 'sun', correct: true }
+    ]
+  },
+
+  {
+    question: '',
+    answers: [
+      { text: 'heart', correct: true },
+      { text: 'body', correct: true },
+      { text: 'mind', correct: true }
+    ]
+  },
+
+  {
+    question: '',
+    answers: [
+      { text: 'black', correct: true },
+      { text: 'white', correct: true },
+      { text: 'grey', correct: true }
+    ]
+  },
+
+  {
+    question: '',
     answers: [
       { text: 'past', correct: true },
       { text: 'present', correct: true },
       { text: 'future', correct: true }
     ]
   },
+
   {
-    question: '3',
+    question: '',
     answers: [
-      { text: 'why', correct: false },
+      { text: 'why', correct: true },
       { text: 'how', correct: true }
     ]
   },
+
   {
-    question: '4',
+    question: '',
     answers: [
-      { text: 'hard', correct: false },
+      { text: 'hard', correct: true },
       { text: 'soft', correct: true }
     ]
-  }
-  {
-    question: '5',
-    answers: [
-      { text: 'wind', correct: false },
-      { text: 'sea', correct: true }
-      { text: 'land', correct: true }
-    ]
-  }
-  {
-    question: '6',
-    answers: [
-      { text: 'rain', correct: false },
-      { text: 'sun', correct: true }
-    ]
-  }
-  {
-    question: '7',
-    answers: [
-      { text: 'heart', correct: false },
-      { text: 'body', correct: true }
-      { text: 'mind', correct: true }
-    ]
-  }
-  {
-    question: '8',
-    answers: [
-      { text: 'black', correct: false },
-      { text: 'white', correct: true }
-      { text: 'grey', correct: true }
-    ]
-  }
-  {
-    question: '9',
-    answers: [
-      { text: 'moon', correct: false },
-      { text: 'stars', correct: true }
-    ]
-  }
-  {
-    question: '10',
-    answers: [
-      { text: 'trust', correct: false },
-      { text: 'know', correct: true }
-    ]
-  }
+  },
 ]

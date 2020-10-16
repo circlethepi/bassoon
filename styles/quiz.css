@@ -20,7 +20,7 @@
 
 .btn-grid {
   display: grid;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
   gap: 0.3rem;
   margin: 1rem 0;
 }
