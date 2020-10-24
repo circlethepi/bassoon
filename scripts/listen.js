@@ -55,9 +55,9 @@ function generateTitle() {
   //  var partTime = 0
 
     var nameOne = [
-      ["ancient ", "forgotten ", "legendary "], //past
-      ["immediate ", "instant ", "everlasting "], //present
-      ["coming ", "fated ", "imminent "] //future
+      ["ancient ", "forgotten ", "primeval "], //past
+      ["unbroken ", "instant ", "everlasting "], //present
+      ["coming ", "fated ", "approaching "] //future
     ]
 
 //heart body mind
@@ -112,7 +112,7 @@ function generateTitle() {
   var titleFour = nameFour[partFourA][partFourB] ;
   var titleFive = nameFive[partFiveA][partFiveB] ;
 
-  pieceTitleDisplay = 'the ' + titleOne + titleTwo + titleThree + 'of ' + titleFour + titleFive;
+  pieceTitleDisplay = 'the ' + titleOne + titleThree + 'of ' + titleFour + titleFive;
 
   console.log(pieceTitleDisplay)
   pieceTitle.innerText = pieceTitleDisplay;
