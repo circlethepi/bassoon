@@ -4,10 +4,12 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-const listenButton = document.getElementById('listen-btn')
 var pieceID = 0
+//link creating variables
 let pieceURL = "circlethepi.github.io/bassoon/listen/"
 var pieceLink = ""
+var titleID = ""
+var urlEnd = ".html"
 
 
 let shuffledQuestions, currentQuestionIndex
@@ -19,7 +21,6 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
-listenButton.addEventListener('click', showPieceID)
 
 
 //seting up starting
@@ -101,11 +102,8 @@ function selectAnswer(e) { //what happens when answer selected
     currentQuestionIndex++
     setNextQuestion()
   } else {
-  //  startButton.innerText = 'restart'
-  //  startButton.classList.remove('hide')
+    showPieceID() //auto redirect to listen page
 
-    listenButton.innerText = 'listen'
-    listenButton.classList.remove('hide')
   }
 }
 
@@ -161,43 +159,43 @@ const questions = [
   {
     question: '',
     answers: [
-      { text: 'heart', id: 1000 },
-      { text: 'body', id: 2000 },
-      { text: 'mind', id: 3000 }
+      { text: 'past', id: 1000 },
+      { text: 'present', id: 2000 },
+      { text: 'future', id: 3000 }
     ]
   },
 
   {
     question: '',
     answers: [
-      { text: 'black', id: 10000 },
-      { text: 'white', id: 20000 },
-      { text: 'grey', id: 30000 }
+      { text: 'why', id: 10000 },
+      { text: 'how', id: 20000 }
     ]
   },
 
   {
     question: '',
     answers: [
-      { text: 'past', id: 100000 },
-      { text: 'present', id: 200000 },
-      { text: 'future', id: 300000 }
+      { text: 'hard', id: 100000 },
+      { text: 'soft', id: 200000 }
     ]
   },
 
   {
     question: '',
     answers: [
-      { text: 'why', id: 1000000 },
-      { text: 'how', id: 2000000 }
+      { text: 'heart', id: 1000000 }, //only affects titles
+      { text: 'body', id: 2000000 },
+      { text: 'mind', id: 3000000 }
     ]
   },
 
   {
     question: '',
     answers: [
-      { text: 'hard', id: 10000000 },
-      { text: 'soft', id: 20000000 }
+      { text: 'black', id: 10000000 }, //only affects titles
+      { text: 'white', id: 20000000 },
+      { text: 'grey', id: 30000000 }
     ]
   },
 ]
@@ -205,10 +203,14 @@ const questions = [
 
 
 function showPieceID()  {
-  var idNumURL = pieceID.toString()
-  var urlEnd = ".html"
-  pieceLink = pieceURL.concat(idNumURL,urlEnd)
+  var idNum = pieceID.toString()
+  //idNumURL = idNum.slice(3) //ets rid of title numbers
+  //titleID = idNum.slice(0,2)
+  //pieceLink = pieceURL.concat(idNumURL,urlEnd)
 
-  window.location=pieceLink ;
+  localStorage.setItem('vIdNumLocalStorage', idNum);
 
+  window.location.href='listen.html'
+
+//  window.location=pieceLink ;
 }

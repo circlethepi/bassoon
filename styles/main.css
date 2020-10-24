@@ -77,3 +77,24 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for listening page */
+.piecetitle {
+  color: var(--c-light);
+  font-weight: bold;
+  font-family: 'waiting', cursive;
+  font-size: 3rem;
+}
