@@ -1,20 +1,41 @@
 //get piece quiz results from quiz
-var listenPieceID = localStorage.getItem('vIdNumLocalStorage');
-const listenButton = document.getElementById('listen-btn')
+var listenPieceID = localStorage.getItem('vIdNumLocalStorage') ;
+const listenButton = document.getElementById('listen-btn') ;
 
-//get piece title area
-const pieceTitle = document.getElementById('piecetitle');
-
+//get piece title vars
+const pieceTitle = document.getElementById('piecetitle') ;
 var pieceTitleDisplay = ''
 var partTime = 0
 
+//setting up audio url
+var audioSourceBeg = '/listen/'
+var audioSourceEnd = '.mp3' ;
+
+//begin playing pieceID
+function beginPlayingPiece() {
+
+  filePieceID = listenPieceID.slice(2) ;
+
+  var audio = document.getElementById('audio') ;
+  var source = document.getElementById('audioSource') ;
+
+  var piecePlay = audioSourceBeg.concat(filePieceID, audioSourceEnd) ;
+
+  source.src = piecePlay
+
+  audio.play()
+
+}
+
+
+
+
+
 //MAKE TITLE
-
-
 //random number for time part of title
 function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+  min = Math.ceil(min) ;
+  max = Math.floor(max) ;
   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
 
@@ -92,6 +113,11 @@ function generateTitle() {
   console.log(pieceTitleDisplay)
   pieceTitle.innerText = pieceTitleDisplay;
   piecetitle.classList.remove('hide')
+
+
+  beginPlayingPiece()
+
+
 
 }
 
