@@ -8,26 +8,30 @@ var pieceTitleDisplay = ''
 var partTime = 0
 
 //setting up audio url
-var audioSourceBeg = '/listen/'
+var audioSourceBeg = 'listen/'
 var audioSourceEnd = '.mp3' ;
+var audio = document.getElementById('audio') ;
+var source = document.getElementById('audioSource') ;
+var piecePlay = '' ;
+
+//play controls
+const playButton = document.getElementById('play-btn') ;
+
 
 //begin playing pieceID
 function beginPlayingPiece() {
 
   filePieceID = listenPieceID.slice(2) ;
+  piecePlay = audioSourceBeg.concat(filePieceID, audioSourceEnd) ;
 
-  var audio = document.getElementById('audio') ;
-  var source = document.getElementById('audioSource') ;
-
-  var piecePlay = audioSourceBeg.concat(filePieceID, audioSourceEnd) ;
+  console.log(piecePlay)
 
   source.src = piecePlay
 
-  audio.play()
+  console.log(source.src)
 
+  audio.load() ;
 }
-
-
 
 
 
@@ -116,8 +120,6 @@ function generateTitle() {
 
 
   beginPlayingPiece()
-
-
 
 }
 
